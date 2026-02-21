@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+/* MarkME Design System - Professional Attendance Dashboard */
+
+@layer base {
+  :root {
+    /* Brand colors - Indigo based */
+    --brand: 243 75% 59%;
+    --brand-light: 243 75% 69%;
+    --brand-dark: 243 75% 49%;
+    --brand-glow: 243 75% 75%;
+    
+    /* Success/Secondary - Emerald */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+    
+    --background: 210 40% 98%;
+    --foreground: 222 47% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 17%;
+
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 17%;
+
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 243 75% 96%;
+    --accent-foreground: 243 75% 49%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 243 75% 59%;
+
+    --radius: 0.5rem;
+
+    /* Custom spacing */
+    --gap-xs: 4px;
+    --gap-sm: 8px;
+    --gap-md: 16px;
+    --gap-lg: 24px;
+    --gap-xl: 32px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(222 47% 17% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(222 47% 17% / 0.1), 0 2px 4px -2px hsl(222 47% 17% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(222 47% 17% / 0.1), 0 4px 6px -4px hsl(222 47% 17% / 0.1);
+    --shadow-brand: 0 4px 14px 0 hsl(243 75% 59% / 0.25);
+
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 17%;
+    --sidebar-primary: 243 75% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 243 75% 96%;
+    --sidebar-accent-foreground: 243 75% 49%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 243 75% 59%;
+  }
+
+  .dark {
+    --brand: 239 84% 67%;
+    --brand-light: 239 84% 77%;
+    --brand-dark: 239 84% 57%;
+    --brand-glow: 239 84% 80%;
+
+    /* Success/Secondary - Emerald */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    --background: 222 47% 11%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 14%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 14%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 239 84% 67%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 27%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 217 33% 27%;
+    --muted-foreground: 213 27% 84%;
+
+    --accent: 239 40% 25%;
+    --accent-foreground: 239 84% 85%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 27%;
+    --input: 217 33% 27%;
+    --ring: 239 84% 67%;
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
+    --shadow-brand: 0 4px 14px 0 hsl(239 84% 67% / 0.3);
+
+    --sidebar-background: 222 47% 14%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 239 84% 67%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 239 40% 25%;
+    --sidebar-accent-foreground: 239 84% 85%;
+    --sidebar-border: 217 33% 27%;
+    --sidebar-ring: 239 84% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
